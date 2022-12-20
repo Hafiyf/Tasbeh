@@ -1,0 +1,44 @@
+@import url(./normalize.css);
+
+.container {
+    max-width: 1440px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(0, 54, 4);
+}
+
+.count-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: #fff;
+}
+
+.incBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed rgb(255, 255, 255);
+    border-radius: 50%;
+    background: rgb(6, 120, 52);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.445);
+}
+
+.resetBtn {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+
+    color: #fff;
+    background: rgba(196, 0, 0, 0.525);
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
