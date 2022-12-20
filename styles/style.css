@@ -2,17 +2,20 @@
 
 .container {
     max-width: 1440px;
-    height: 500px;
+    height: 685px;
     margin: 0 auto;
-}
-
-.wrapper {
-    height: 140%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgb(0, 54, 4);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: rgb(0, 54, 4); */
 }
 
 .count-title {
