@@ -1,17 +1,45 @@
-const resetBtn = document.querySelector('.resetBtn')
-const title = document.querySelector('.count-title')
-const incBtn = document.querySelector('.incBtn')
+const resetBtn = document.querySelector(".resetBtn");
+const title = document.querySelector(".count-title");
+const incBtn = document.querySelector(".incBtn");
+const sound = document.querySelector(".audio");
+const notafic = document.querySelector(".notafic");
 
 let count = 0;
 
+alarm = () => {
+  notafic.play();
+  return;
+};
 
-incBtn.addEventListener('click', () => {
-    count++
-    title.innerHTML = count;
-})
+notafication = () => {
+  if (count === 33) {
+    alarm();
+  } else if (count === 66) {
+    alarm();
+  } else if (count === 99) {
+    alarm();
+  }
+};
 
-resetBtn.addEventListener('click', () => {
+incBtn.addEventListener("click", () => {
+  count++;
+  title.innerHTML = count;
+
+  sound.pause();
+  sound.play();
+
+  notafication();
+  
+  return;
+});
+
+resetBtn.addEventListener("click", () => {
+  const confirmAlert = confirm("0 dan boshlamoqchimisiz?");
+
+  if (confirmAlert) {
     count = 0;
     title.innerHTML = count;
-})
-
+    alarm();
+    console.log("yes");
+  }
+});

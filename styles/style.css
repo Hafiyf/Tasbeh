@@ -1,4 +1,6 @@
-
+body{
+    background: #dee0ec;
+}
 .container {
     max-width: 1440px;
     height: 100vh;
@@ -6,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 .wrapper {
@@ -14,13 +15,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background: rgb(0, 54, 4); */
+
 }
 
 .count-title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 70px;
-    color: rgb(6, 120, 52);
+    color: rgb(255, 255, 255);
 }
 
 .incBtn {
@@ -30,13 +31,21 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    /* border: 2px dashed rgb(255, 255, 255);
-    background: rgb(6, 120, 52); */
+    border: 5px solid rgb(255, 255, 255);
+    background: #e9c110;
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.445);
+    transition: 0.1s;
+}
+
+.incBtn:active{
+    background: #e1bb11;
+    border: 5px dashed rgb(255, 255, 255);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.445);
+    
 }
 
 .resetBtn {
-    /* font-family: Arial, Helvetica, sans-serif; */
+
     margin-bottom: 50px;
     font-size: 1.5rem;
 }
