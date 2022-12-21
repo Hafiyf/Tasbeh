@@ -4,6 +4,7 @@ const incBtn = document.querySelector(".incBtn");
 const sound = document.querySelector(".audio");
 const notafic = document.querySelector(".notafic");
 
+
 let count = 0;
 
 alarm = () => {
@@ -42,3 +43,6 @@ resetBtn.addEventListener("click", () => {
     alarm();
   }
 });
+
+
+
