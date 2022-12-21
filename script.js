@@ -29,12 +29,12 @@ incBtn.addEventListener("click", () => {
   sound.play();
 
   notafication();
-  
+
   return;
 });
 
 resetBtn.addEventListener("click", () => {
-  const confirmAlert = confirm("0 dan boshlamoqchimisiz?");
+  const confirmAlert = confirm("RESET?");
 
   if (confirmAlert) {
     count = 0;
