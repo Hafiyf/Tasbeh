@@ -40,6 +40,5 @@ resetBtn.addEventListener("click", () => {
     count = 0;
     title.innerHTML = count;
     alarm();
-    console.log("yes");
   }
 });
